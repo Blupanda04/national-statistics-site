@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IndoStats — Statistik Indonesia</title>
+<meta name="description" content="Angka-angka Indonesia yang dicek dari sumbernya: penduduk, ekonomi, harga, tenaga kerja, dan kesejahteraan, dengan sumber dan tahun di setiap angka.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect x='2' y='2' width='36' height='36' rx='8' fill='%230e4f4a'/%3E%3Cpath d='M20 8 L27 17 L35 17 L28 23 L30 32 L20 26 L10 32 L12 23 L5 17 L13 17 Z' fill='%23e8a33d'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#/" aria-label="IndoStats — beranda">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><rect x="2" y="2" width="36" height="36" rx="8" fill="#0e4f4a"/><path d="M20 8 L27 17 L35 17 L28 23 L30 32 L20 26 L10 32 L12 23 L5 17 L13 17 Z" fill="#e8a33d"/></svg>
+      <span class="brand-text"><strong>IndoStats</strong><small>Statistik Indonesia</small></span>
+    </a>
+    <button class="menu-button" id="menu-button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Navigasi utama">
+      <a href="#/" data-route="">Beranda</a>
+      <a href="#/penduduk" data-route="penduduk">Penduduk</a>
+      <a href="#/ekonomi" data-route="ekonomi">Ekonomi</a>
+      <a href="#/harga" data-route="harga">Harga</a>
+      <a href="#/tenaga-kerja" data-route="tenaga-kerja">Tenaga Kerja</a>
+      <a href="#/metodologi" data-route="metodologi">Metodologi</a>
+    </nav>
+    <form class="search" id="search-form" role="search">
+      <label class="visually-hidden" for="search-input">Cari indikator</label>
+      <input id="search-input" type="search" placeholder="Cari indikator…" autocomplete="off">
+      <button type="submit">Cari</button>
+    </form>
+  </div>
+</header>
+<main class="wrap" id="view" aria-live="polite"></main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>IndoStats</strong> — angka-angka Indonesia, dicek dari sumbernya. Setiap angka di situs ini membawa sumber dan tahunnya; lihat <a href="#/metodologi">Metodologi</a> untuk daftar lengkap sumber dan cara mengutip.</p>
+    <p class="fine">Data utama: Badan Pusat Statistik (BPS), Bank Indonesia, APJII. IndoStats adalah situs independen dan bukan situs resmi BPS. Angka diperbarui terakhir 27 November 2026.</p>
+  </div>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
